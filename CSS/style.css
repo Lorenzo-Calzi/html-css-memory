@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sigmar One', cursive;
+    font-family: 'Nerko One', cursive;
 }
 
 .sfondo_site{
-    background-color: rgba(173, 216, 230, 1);
-    
+    background-color: rgba(173, 216, 230, 1);  
 }
 
 .container_site{
@@ -26,9 +25,10 @@
     width: 100%;
     line-height: 100px;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
     color: white;
-    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 40px;
 }
 
 .container_card{
@@ -38,7 +38,6 @@
 .tessera{
     height: 33%;
     width: 23%;
-    background-color: seagreen;
     float: left;
     margin-left: 1%;
     margin-right: 1%;
@@ -46,13 +45,29 @@
     border-radius: 10px;
     cursor: pointer;
     position: relative;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.pattern{
     background-image: url('/img/pattern.png');
     background-size: contain;
     background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
 }
 
-.tessera:hover .image, .tessera:hover .name_card{
-    display: block;
+.tessera:hover .pattern{
+    display: none;
+}
+
+.tessera:hover {
+    background-color: white;
 }
 
 .image{
@@ -62,11 +77,14 @@
     margin-top: 10%;
     background-size: cover;
     background-position: center;
-    display: none;
 }
 
 .air_baloon{
     background-image: url('/img/noun_air_balloon_3134741.png');
+}
+
+.air_baloon:focus{
+    
 }
 
 .bicycle{
@@ -93,15 +111,16 @@
     height: 20%;
     width: 80%;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 1%;
     text-align: center;
-    font-size: 20px;
-    display: none;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px black;
     color: rgba(230, 25, 134, 1);
 }
 
 .credits{
     text-align: center;
+    font-size: 20px;
     padding-bottom: 30px;
 }
 
